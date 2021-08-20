@@ -4,7 +4,7 @@ mkdir .resources .themes documents Downloads code pics
 #-----------install yay------------
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+makepkg -si #have to confirm to download yay
 cd ..
 sudo rm -r yay
 
@@ -24,7 +24,7 @@ sudo rm -r rofi
 git clone https://github.com/schniebly-scott/linux_config.git
 
 sudo rm -r .config/polybar .config/kitty .config/i3 .config/rofi
-cp linux_config/* .config/
+cp -r linux_config/* .config/
 
 sudo chmod -R +x ~/.scripts/
 
